@@ -1,4 +1,4 @@
-# class vs instance attributes
+# instance attributes belong to the instance whereever you created it and anywhere else.
 class Website:
   def __init__(self, title):
     self.title = title
@@ -11,6 +11,7 @@ ws_two = Website('My Second Title')
 print(ws_two.__dict__)
 
 
+# class attribute belongs to the class definition. hardcoded.
 class DifferentWebsite:
   title = 'My Class Title'
 
