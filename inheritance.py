@@ -24,35 +24,28 @@
 
 
 
+Class Example Challenge Finished:
 class Pet:
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
-
-    def get_name(self):
-        return self.name
-
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
+  
+  def get_name(self):
+    return self.name
+  
+  def speak(self):
+    return "I don't speak"
 class Cat(Pet):
-    def speak(self):
-        return 'Meow'
-
+  def __init__(self, name, age, color):
+    super().__init__(name, age)
+    self.color = color
+  def speak(self):
+    return 'Meow'
 class Dog(Pet):
-    def speak(self):
-        return 'Woof'
-
-
-cat_one = Cat('Bob', 9)
-print(dog_one.speak())
-print(cat_one.name)
-print(cat_one.age)
-cat_one.purchase_Pet('Todd')
-
-dog_one = Dog('Billy', 6)
-print(dog_one.speak())
-print(dog_one.name)
-print(dog_one.age)
-dog_one.purchase_Pet('Sally')
-
+  def speak(self):
+    return "Woof"
+class Fish(Pet):
+  pass
 
 
 
